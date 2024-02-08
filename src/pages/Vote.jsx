@@ -13,7 +13,7 @@ const Vote = () => {
         // async and await
         const fetchPosts = async () => {
             try {
-                const response = await fetch("http://localhost:8000/api/polls", {
+                const response = await fetch("https://poll-backend-0pt9.onrender.com/api/polls", {
                     method: "GET",
                     headers: {
                         'Authorization': `Bearer ${token}`

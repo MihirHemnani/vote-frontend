@@ -14,7 +14,7 @@ const UserPolls = () => {
     useEffect(() => {
         const fetchPost = async () => {
           try {
-            const response = await fetch(`http://localhost:8000/api/polls/userpolls/${id}`, {
+            const response = await fetch(`https://poll-backend-0pt9.onrender.com/api/polls/userpolls/${id}`, {
                 method: "GET",
                 headers: {
                     'Authorization': `Bearer ${token}`

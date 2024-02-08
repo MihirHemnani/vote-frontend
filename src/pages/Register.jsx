@@ -50,7 +50,7 @@ const Resgister = () => {
         }
 
         try {
-            const response = await fetch(`http://localhost:8000/api/user/signup`, {
+            const response = await fetch(`https://poll-backend-0pt9.onrender.com/api/user/signup`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

@@ -14,7 +14,7 @@ const VotePoll = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-          const response = await fetch(`http://localhost:8000/api/polls/${id}`, {
+          const response = await fetch(`https://poll-backend-0pt9.onrender.com/api/polls/${id}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -41,7 +41,7 @@ const VotePoll = () => {
   const handleSubmit = async () => {
     try {
 
-        const response = await fetch(`http://localhost:8000/api/polls/vote/${id}`, {
+        const response = await fetch(`https://poll-backend-0pt9.onrender.com/api/polls/vote/${id}`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
