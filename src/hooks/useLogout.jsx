@@ -11,7 +11,7 @@ export const useLogout = () => {
 
 
     const logout = () => {
-        localStorage.removeItem('dairy_user');
+        localStorage.removeItem('socket_user');
         AuthDispatch({ type: 'LOGOUT' })
     }
 
